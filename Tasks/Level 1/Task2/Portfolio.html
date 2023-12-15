@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <title>My Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Poppins ,sans-serif";
+        }
+
+
+        .container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: xx-large;
+            margin-left: 20px;
+        }
+        h4{
+            position: absolute;
+            right: 46%;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: aliceblue;
+            scroll-snap-align: start;
+            position: relative;
+        }
+
+        p {
+            font-size: 20px;
+            position: absolute;
+            top: 58%;
+            margin-left: 20px;
+        }
+
+        #p1 {
+            margin-left: 60px;
+        }
+
+        #img {
+            margin: 0 auto;
+
+        }
+
+        #ai {
+            position: absolute;
+            top: 70%;
+            margin-left: 40px;
+            color: crimson;
+            text-decoration: wavy;
+            font-size: large;
+            transition: all 0.3s linear;
+        }
+
+        a:hover {
+            transform: scale(1.2);
+        }
+
+        #two {
+            display: flex;
+
+        }
+
+        #im {
+            height: 600px;
+            width: 400px;
+            border: 1px black;
+            margin-left: 700px;
+            opacity: 0.4;
+        }
+
+        ul {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+            background-color: rgb(8, 8, 8);
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(224, 5, 78);
+            hyphens: auto;
+            transition: all 0.3s linear;
+        }
+
+        a:hover {
+            transform: scale(1.3);
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 50px;
+            margin-top: 120px;
+        }
+        .fa-whatsapp {
+            color: rgb(72, 255, 0);
+        }
+
+        .fa-instagram {
+            color: rgb(211, 36, 65);
+        }
+
+        .fa-linkedin {
+            color: rgb(12, 10, 179);
+
+        }
+
+        #waap {
+            height: 45px;
+            width: 45px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            text-align: center;
+            margin: 5px;
+            line-height: 60px;
+            box-shadow: 2px 4px 2px 2px gray;
+        }
+
+        #insta {
+            height: 45px;
+            width: 45px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            text-align: center;
+            margin: 5px;
+            line-height: 60px;
+            box-shadow: 2px 4px 2px 2px gray;
+        }
+
+        #lindn {
+            height: 45px;
+            width: 45px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            text-align: center;
+            margin: 5px;
+            line-height: 60px;
+            box-shadow: 2px 4px 2px 2px gray;
+        }
+
+        a i {
+
+            transition: all 0.3s linear;
+            margin: 3px;
+
+
+        }
+
+        a:hover i {
+            transform: scale(1.4);
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="#one" target="_blank">
+                <li>Home</li>
+            </a>
+            <a href="#three" target="_blank">
+                <li> Contact</li>
+            </a>
+            <a href="http://127.0.0.1:5501/projects.html" target="_blank">
+                <li> Project</li>
+            </a>
+        </ul>
+        <div class="container">
+            <section id="one">
+                <h1>FRONT-END SOFTWARE DEVELOPER </h1>
+                <p>Resolving design problems, building smart user interfaces and useful interactions, <br> developing
+                    rich
+                    web
+                    applications and seamless web experiences</p>
+                <a id="ai" href="#two"> About me ></a>
+                <img id="img" src="./penetrationTesting-1024x1024.jpg" alt="">
+            </section>
+            <section id="two">
+                <h1>Hi I'm Shilpa Yadav <br>Web Developer</h1>
+                <p id="p1">Hello, I'm Shilpa Yadav I have done Btech in Electronic And Telecommunication from SVERI's
+                    college of <br>
+                    engineering Pandharpur. I have keen knowledge about
+                    JAVA,SQL,HTML,CSS and also I have done project on it. <br> I like to learn new things becouse I
+                    think
+                    each and every person should always be in learning mode therefore the <br>attitude of learning
+                    remain in us.
+                    I also like to reading books in free time. and I am a software engineer who loves to create <br>
+                    websites . I have been working as Web developer for quite some time now . I love to work on exciting
+                    projects. <br> This is the field I get to express my creativity</p>
+                <img id="im" src="./2450b3900b884ec332a9a8b64fad70e1.png" alt="">
+
+
+            </section>
+            <section id="three">
+                <h4>-- Contact with me -- </h4>
+                <br>
+                <div class="icon">
+                    <a id="waap" href="https://github.com/monikaa00/myproject.git" target="_blank">
+                        <i id="f" class="fa fa-2x fa-github"></i>
+                    </a>
+                    <a id="insta" href="https://instagram.com/shilpayadav_20?igshid=NzZIODBkYWE4Ng" target="_blank">
+                        <i id="i" class="fa fa-2x fa-instagram"></i>
+                    </a>
+                    <a id="lindn"
+                        href="https://www.linkedin.com/in/shilpa-yadav-sde?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androide_app"
+                        target="_blank">
+                        <i id="w" class="fa fa-2x fa-linkedin"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+</body>
+
+</html>

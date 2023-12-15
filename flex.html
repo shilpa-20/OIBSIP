@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tray{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            margin:0 auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around; 
+            /* justify-content: center; */
+            align-items: center;
+            /* justify-content: right;
+            justify-content: space-evenly;
+            justify-content: space-between; */
+            /* align-items: flex-start; */
+            /* align-items:flex-end ; */
+            /* justify-content: end; */
+
+        
+        }
+        .glass{
+            height: 100px;
+            width: 60px;
+            border: 1px solid;
+            background-color: hotpink;
+        }
+        #glass1{
+            order: 1;
+            order: -2;
+        }
+        #glass2{
+            order: -1;
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+<div id="tray">
+    <div class="glass" id="glass1">glass1</div>
+    <div class="glass" id="glass2">glass2</div>
+    <div class="glass" id="glass3">glass3</div>
+    <div class="glass" id="glass4">glass4</div>
+</div>
+</body>
+</html>
