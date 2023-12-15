@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./AMBOLI.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.txt {
+  max-width: 650px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+nav {
+  width: 100%;
+  height: 90px;
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-family: sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.logo {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.Menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  position: relative;
+}
+
+.Menu a:before {
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid indianred;
+  transition: 0.4s linear;
+}
+
+.Menu a:hover:before {
+  width: 90%;
+}
+
+.Reg a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  background: indianred;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.Reg a:hover {
+  background: transparent;
+  border: 1px solid indianred;
+}
+
+.txt span {
+  letter-spacing: 5px;
+  font-weight: 100px;
+}
+
+.txt h1 {
+  font-size: 3.5em;
+}
+
+.txt a {
+  text-decoration: none;
+  padding: 10px 20px;
+  letter-spacing: 4px;
+  background: indianred;
+  color: white;
+}
+
+.txt a:hover {
+  background: transparent;
+  border: 1px solid indianred;
+}
