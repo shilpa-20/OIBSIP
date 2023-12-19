@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book my trip</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,300;1,600&display=swap');
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+  background-image:url(./1000_F_143487869_1eLO3ZgKZDHiohmxSUgRtOChDMwVpTgh.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+.main{
+ text-align: center;
+ color:white;
+ margin-top: 100px;
+}
+h1{
+  padding: 30px;
+}
+.container{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.content p{
+  font-size: large;
+  padding: 20px;
+  color: #8a8a8a;
+}
+.inp input[type=text]{
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: #8a8a8a;
+  margin: 25px 10px 25px 0px;
+}
+.inp input[type=date]{
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: #8a8a8a;
+  margin: 25px 10px 25px 0px;
+}
+.select{
+  padding: 10px;
+  line-height: 10px;
+}
+.age{
+  padding: 10px;
+  line-height: 20px;
+  position: relative;
+
+}
+.sub{
+  background-color:indianred;
+  justify-content: center;
+  color: aliceblue;
+  padding: 15px;
+  border-radius: 5px;
+  border:#8a8a8a;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+</style>
+
+<body>
+  <div class="main">
+    <h1>BOOK MY TRIP</h1>
+    <div class="container">
+      <div class="content">
+        <P>Offers a quick and easy way to book tickets online</P>
+        <div class="btn">
+          
+          <input type="radio" name="f" id="">
+          <label for="f">Flight</label>
+          
+          <input type="radio" name="f" id="train">
+          <label for="">Train</label>
+          
+          <input type="radio" name="f" id="bus">
+          <label for="">Bus</label>
+
+        </div>
+        <div class="inp">
+          <input type="text" name="" id="" placeholder="Your name">
+          <input type="date" name="" id="" placeholder="Date">
+        </div>
+        <div class="select">
+          <select class="option">
+            <option value="Destination City">Destination City</option>
+            <option value="Destination City">Jammu & Kashmir</option>
+            <option value="Destination City">Goa</option>
+          </select>
+        </div>
+        <div class="age">
+          <select class="option">
+            <option value="">Adults</option>
+            <option value="">1</option>
+            <option value="">2</option>
+          </select>
+        </div>
+        <div class="age">
+          <select class="option">
+            <option value="Destination City">Children</option>
+            <option value="Destination City">1</option>
+            <option value="Destination City">2</option>
+          </select>
+        </div>
+        
+          <input class="sub" type="submit" value="Submit">
+    
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
