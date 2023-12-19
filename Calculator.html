@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATER</title>
+    <style>
+        body {
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #box {
+            height: 500px;
+            width: 350px;
+            border: 1px solid sky;
+            border-radius: 20px;
+            box-shadow: 0px 0px 45px 15px rgba(153, 153, 153, 1);
+            background-color: rgb(149, 219, 247);
+        }
+
+        input[type="text"] {
+            padding: 30px;
+            width: 270px;
+            margin: 15px 3px 0px 25px;
+            background-color: rgb(212, 238, 247);
+            /* margin-top: 15px; */
+            /* margin-left: 8px; */
+
+        }
+
+        .b {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        #output {
+            text-align: right;
+            padding: 10px 8px;
+            font-size: 25px;
+        }
+
+        button {
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color:rgb(75, 197, 245);
+            color: black;
+            padding: 2px;
+            font-size: large;
+        }
+
+        button:hover {
+            height: 55px;
+            width: 55px;
+            transition: all 0.3s linear;
+            box-shadow: 0px 3px 5px 4px rgb(155, 196, 212);
+        }
+        #enter{
+            width: 100px;
+            margin-right: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <input id="output" type="text" placeholder="0">
+        <div class="b">
+            <button onclick="display('(')">(</button>
+            <button onclick="display(')')">)</button>
+            <button onclick="calculate()" class="eq">ans</button>
+            <button onclick="del()">del</button>
+            <button onclick="Clear()">clear</button>
+            
+
+        </div>
+        <div class="b">
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('7')">7</button>
+            <button style="background-color: rgb(212, 238, 247)" onclick="display('8')">8</button>
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('9')">9</button>
+            <button onclick="display('%')" class="eq">%</button>
+            <button onclick="display('^')">^</button>
+
+
+        </div>
+        <div class="b">
+            <button style="background-color: rgb(212, 238, 247)" onclick="display('4')">4</button>
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('5')">5</button>
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('6')">6</button>
+            <button onclick="display('*')" class="eq">*</button>
+            <button onclick="display('/')" class="eq">/</button>
+        </div>
+        <div class="b">
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('1')">1</button>
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('2')">2</button>
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('3')">3</button>
+            <button onclick="display('+')" class="eq">+</button>
+            <button onclick="display('-')" class="eq" >-</button>
+
+        </div>
+        <div class="b">
+            <button onclick="display('.')">.</button>
+            <button style="background-color: rgb(212, 238, 247)"onclick="display('0')">0</button> 
+            <button id="enter" onclick="calculate()" class="eq">Enter</button>
+
+        </div>
+    </div>
+    <script>
+        let output = document.getElementById("output");
+
+        function display(num) {
+            output.value += num;
+        }
+        function Clear() {
+            output.value = "";
+        }
+        function calculate() {
+            output.value = eval(output.value);
+        }
+        function del() {
+            output.value = output.value.slice(0, -1);
+        }
+
+    </script>
+</body>
+
+</html>
